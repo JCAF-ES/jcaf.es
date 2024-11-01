@@ -1,9 +1,9 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = strip_tags(trim($_POST["visitor_name"]));
-    $email = filter_var(trim($_POST["visitor_email"]), FILTER_SANITIZE_EMAIL);
-    $subject = strip_tags(trim($_POST["email_title"]));
-    $message = trim($_POST["visitor_message"]);
+    $name = strip_tags(trim($_POST["name"]));
+    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+    $subject = "Contacto por web ";
+    $message = trim($_POST["Mensaje"]);
 
     // Comprueba si los datos estan completos
     if (empty($name) || empty($subject) || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {

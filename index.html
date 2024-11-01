@@ -512,32 +512,24 @@
                       </h5>
                     </div>
                     <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                      <form action="forms/contact.php" method="post" role="form" class="php-email-form" data-netlify="true">
                         <div class="row">
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" name="visitor_name" class="form-control" id="name" placeholder="Tu nombre" required>
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Tu nombre" required>
                             </div>
                           </div>
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="email" class="form-control" name="visitor_email" id="email" placeholder="Tu Email" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="email_title" id="subject" placeholder="Asunto" required>
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Tu Email" required>
                             </div>
                           </div>
                           <div class="col-md-12">
                             <div class="form-group">
-                              <textarea class="form-control" name="visitor_message" rows="5" placeholder="Mensaje" required></textarea>
+                              <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
                             </div>
                           </div>
                           <div class="col-md-12 text-center my-3">
-                            <div class="loading">Cargando</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
                           </div>
                           <div class="col-md-12 text-center">
                             <button type="submit" class="button button-a button-big button-rouded">Enviar mensaje</button>
